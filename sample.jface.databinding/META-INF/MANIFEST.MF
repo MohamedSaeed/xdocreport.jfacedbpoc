@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Databinding
+Bundle-SymbolicName: sample.jface.databinding; singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: sample.jface.databinding.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.databinding,
+ org.eclipse.core.databinding.beans,
+ org.eclipse.core.databinding.observable,
+ org.eclipse.core.databinding.property,
+ org.eclipse.jface.databinding,
+ com.ibm.icu
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: javax.validation;version="1.0.0.GA",
+ javax.validation.bootstrap;version="1.0.0.GA",
+ javax.validation.constraints;version="1.0.0.GA",
+ javax.validation.groups;version="1.0.0.GA",
+ javax.validation.metadata;version="1.0.0.GA",
+ org.hibernate.validator
+Bundle-ClassPath: bin/,
+ .
