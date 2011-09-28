@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Java Bean Validation API
+Bundle-SymbolicName: com.springsource.javax.validation
+Bundle-Version: 1.0.0.GA
+Bundle-ClassPath: com.springsource.javax.validation-1.0.0.GA.jar
+Bundle-Vendor: SpringSource
+Export-Package: javax.validation;version="1.0.0.GA";uses:="javax.validation.bootstrap,javax.validation.metadata,javax.validation.spi",
+ javax.validation.bootstrap;version="1.0.0.GA";uses:="javax.validation",
+ javax.validation.constraints;version="1.0.0.GA";uses:="javax.validation",
+ javax.validation.groups;version="1.0.0.GA",
+ javax.validation.metadata;version="1.0.0.GA",
+ javax.validation.spi;version="1.0.0.GA";uses:="javax.validation"
+Created-By: Apache Maven
+Build-Jdk: 1.5.0_20
+Archiver-Version: Plexus Archiver
+Built-By: hardy
+Tool: Bundlor 1.0.0.CI-B166

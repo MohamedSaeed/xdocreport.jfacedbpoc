@@ -1,0 +1,69 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JBoss Hibernate Validator
+Bundle-SymbolicName: com.springsource.org.hibernate.validator
+Bundle-Version: 4.1.0.GA
+Bundle-ClassPath: com.springsource.org.hibernate.validator-4.1.0.GA.jar
+Bundle-Vendor: SpringSource
+Export-Package: org.hibernate.validator;version="4.1.0.GA";
+  uses:="javax.validation,
+   javax.validation.spi,
+   org.hibernate.validator.cfg,
+   org.hibernate.validator.resourceloading",
+ org.hibernate.validator.cfg;version="4.1.0.GA",
+ org.hibernate.validator.cfg.defs;version="4.1.0.GA";uses:="javax.validation.constraints,org.hibernate.validator.cfg",
+ org.hibernate.validator.constraints;version="4.1.0.GA";uses:="javax.validation,javax.validation.constraints",
+ org.hibernate.validator.constraints.impl;version="4.1.0.GA";uses:="javax.validation,javax.validation.constraints,org.hibernate.validator.constraints",
+ org.hibernate.validator.constraints.impl.scriptassert;version="4.1.0.GA";uses:="javax.script",
+ org.hibernate.validator.engine;version="4.1.0.GA";
+  uses:="javax.validation,
+   javax.validation.metadata,
+   javax.validation.spi,
+   org.hibernate.validator,
+   org.hibernate.validator.cfg,
+   org.hibernate.validator.metadata,
+   org.hibernate.validator.resourceloading",
+ org.hibernate.validator.engine.groups;version="4.1.0.GA",
+ org.hibernate.validator.engine.resolver;version="4.1.0.GA";uses:="javax.validation",
+ org.hibernate.validator.jtype;version="4.1.0.GA",
+ org.hibernate.validator.messageinterpolation;version="4.1.0.GA";uses:="javax.validation,org.hibernate.validator.resourceloading",
+ org.hibernate.validator.metadata;version="4.1.0.GA";uses:="javax.validation,javax.validation.metadata,org.hibernate.validator.engine",
+ org.hibernate.validator.resourceloading;version="4.1.0.GA",
+ org.hibernate.validator.util;version="4.1.0.GA";uses:="javax.validation,org.slf4j",
+ org.hibernate.validator.util.annotationfactory;version="4.1.0.GA",
+ org.hibernate.validator.util.privilegedactions;version="4.1.0.GA",
+ org.hibernate.validator.xml;version="4.1.0.GA";
+  uses:="javax.xml.bind,
+   javax.xml.bind.annotation,
+   javax.xml.bind.annotation.adapters,
+   org.hibernate.validator.metadata"
+Implementation-Title: hibernate-validator
+Implementation-Vendor: org.hibernate
+Created-By: 1.6.0_20 (Apple Inc.)
+Originally-Created-By: Apache Maven
+Implementation-Version: 4.1.0.Final
+Built-By: hardy
+Bundle-Description: Hibernate's Bean Validation (JSR-303) reference implementation.
+Specification-Title: Bean Validation
+Import-Package: javax.persistence;version="[2.0.0,3.0.0)";resolution:=optional,
+ javax.script;version=0,
+ javax.validation;version="[1.0.0,2.0.0)",
+ javax.validation.constraints;version="[1.0.0,2.0.0)",
+ javax.validation.groups;version="[1.0.0,2.0.0)",
+ javax.validation.metadata;version="[1.0.0,2.0.0)",
+ javax.validation.spi;version="[1.0.0,2.0.0)",
+ javax.xml.bind;version=0,
+ javax.xml.bind.annotation;version=0,
+ javax.xml.bind.annotation.adapters;version=0,
+ javax.xml.namespace;version=0,
+ javax.xml.transform;version=0,
+ javax.xml.transform.stream;version=0,
+ javax.xml.validation;version=0,
+ org.slf4j;version="[1.5.6,2.0.0)",
+ org.xml.sax;version=0
+Archiver-Version: Plexus Archiver
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Implementation-Vendor-Id: org.hibernate
+Tool: Bundlor 1.0.0.RELEASE
+Build-Jdk: 1.6.0_20
+Implementation-URL: http://validator.hibernate.org/hibernate-validator
